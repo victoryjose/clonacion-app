@@ -7,12 +7,10 @@ public class CrearTallerDTO {
     private String estadoInscripcion;
     private String url;
     private String lugar;
-
     private int cupo;
 
-    public CrearTallerDTO(){
+    public CrearTallerDTO() {}
 
-    }
     public CrearTallerDTO(String titulo, String descripcion, String estadoInscripcion, String url, String lugar, int cupo) {
         this.titulo = titulo;
         this.descripcion = descripcion;
@@ -22,51 +20,21 @@ public class CrearTallerDTO {
         this.cupo = cupo;
     }
 
-    public String getTitulo() {
-        return titulo;
-    }
+    public String getTitulo() { return titulo; }
+    public void setTitulo(String titulo) { this.titulo = titulo; }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
+    public String getDescripcion() { return descripcion; }
+    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
+    public String getEstadoInscripcion() { return estadoInscripcion; }
+    public void setEstadoInscripcion(String estadoInscripcion) { this.estadoInscripcion = estadoInscripcion; }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
+    public String getUrl() { return url; }
+    public void setUrl(String url) { this.url = url; }
 
-    public String getEstadoInscripcion() {
-        return estadoInscripcion;
-    }
+    public String getLugar() { return lugar; }
+    public void setLugar(String lugar) { this.lugar = lugar; }
 
-    public void setEstadoInscripcion(String estadoInscripcion) {
-        this.estadoInscripcion = estadoInscripcion;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public String getLugar() {
-        return lugar;
-    }
-
-    public void setLugar(String lugar) {
-        this.lugar = lugar;
-    }
-
-    public int getCupo() {
-        return cupo;
-    }
-
-    public void setCupo(int cupo) {
-        this.cupo = cupo;
-    }
+    public int getCupo() { return cupo; }
+    public void setCupo(int cupo) { this.cupo = cupo; }
 }

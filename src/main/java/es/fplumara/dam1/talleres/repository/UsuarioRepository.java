@@ -2,7 +2,7 @@ package es.fplumara.dam1.talleres.repository;
 
 import es.fplumara.dam1.talleres.model.Usuario;
 
-public interface UserRepository {
+public interface UsuarioRepository {
 
     Usuario save(Usuario usuario);
 
@@ -12,7 +12,8 @@ public interface UserRepository {
 
     Usuario findByDiscordUserId(String discordUserId);
 
-    void deleteById(Long id);
+    List<Usuario> findAll();
 
+    void deleteById(Long id);
 
 }
